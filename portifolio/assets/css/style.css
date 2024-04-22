@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
+/* Formatação Geral */
+:root{
+    --cor-fundo: #1E1E1E;
+    --cor-fonte: #fafafa;
+    --cor-branco2: #fafafa79;
+    --borda: 1px solid var(--cor-branco2);
+    --bk-transition: background-color .4s;
+    --max-width-dsktp: 1200px;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-fonte);
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'M PLUS Rounded', monospace;
+}
+li{ list-style: none; }
+
+body{
+    position: relative;
+    width: 100%;
+    background-color: var(--cor-fundo);
+}
+
+.hover{
+    transition: var(--bk-transition);
+    cursor: pointer;
+}
+
+.hover:hover{
+    background-color: var(--cor-branco2);
+}
+
+.col-2{
+    width: 50%;
+}
+/* /Formatação Geral */
+
+/* navbar */
+    .navbar li, .navbar p{
+        font-family: 'M PLUS 1 Code', monospace;
+    }
+
+    .navbar{
+        display: flex;
+        padding: 10px 0 5px 0;
+        border-bottom: var(--borda);
+    }
+
+    .box-img{
+        width: 75px; height: 75px;
+        margin: 0 15px;
+        border: var(--borda)
+    }
+
+    .logo{
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+
+    .address-navbar{
+        display: flex ;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .endereco-navbar{
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px 0 10px;
+        border-bottom: var(--borda);
+        gap: 20px;
+    }
+
+    .links-navbar{
+        position: sticky;
+        top: 0;
+        height: 50%;
+        display: flex;
+        gap: 15px;
+        padding: 5px 10px 0 10px;
+    }
+
+    .links-navbar li{
+        flex: 1;
+        height: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+/* /navbar */
+
+/* banner */
+.banner{
+    background-color: rgba(216, 216, 216, 0.26);
+    display: flex;
+    width: 90%;
+    max-width: var(--max-width-dsktp);
+    margin: 50px auto;
+    padding: 50px;
+    transition: var(--bk-transition);
+}
+
+.banner:hover{
+    background-color: transparent;
+    outline: var(--borda);
+}
+
+.texto-banner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.texto-banner h1{
+    font-size: 3.5rem;
+}
+
+.texto-banner > p{
+    font-size: 2rem;
+}
+
+.texto-banner .btn{
+    width: 50%; height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-branco2);
+    cursor: pointer;
+    transition: var(--bk-transition);
+}
+
+.texto-banner .btn:hover{
+    background-color: transparent;
+    border: var(--borda);
+}
+
+.texto-banner .btn p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1,.5rem;
+}
+
+.img-banner{
+    display: flex;
+    justify-content: end;
+}
+
+.img-banner div{
+    width: 300px; height: 300px;
+}
+
+.img-banner div img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+/* /banner */
+
+/* container */
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.container section{
+    width: 100%;
+    max-width: var(--max-width-dsktp);
+}
+    /* section - sobre mim */
+        .texto p{
+            font-family: 'Farsan', sans-serif;
+        }
+
+        .sobre-mim{
+           
+        }
+    /* /section - sobre mim */
+/* /container */
